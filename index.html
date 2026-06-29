@@ -31,6 +31,7 @@
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(34, 211, 238, 0.4);
             transition: transform 0.2s, background-color 0.2s;
+            -webkit-tap-highlight-color: transparent;
         }
 
         #action-btn:active {
@@ -45,7 +46,8 @@
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
+            margin-top: 0;
             margin-bottom: 20px;
             color: #ffffff;
             text-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
@@ -73,7 +75,8 @@
 
     <div id="content">
         <h1>Яся, я тебя люблю ❤️</h1>
-        <img src="{{ url_for('static', filename='pict.jpg') }}" alt="Яся">
+        <!-- Прямая ссылка на твою картинку из Pinterest -->
+        <img src="https://pinimg.com" alt="Яся">
     </div>
 
     <script>
