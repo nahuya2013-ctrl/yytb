@@ -54,14 +54,13 @@
             animation: fadeIn 1s ease-in;
         }
 
-        /* Стиль для адаптивного блока с фото */
-        .photo-container {
+        img {
             max-width: 85vw;
             max-height: 60vh;
             border-radius: 20px;
-            overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             animation: fadeIn 1.2s ease-in;
+            object-fit: cover;
         }
 
         @keyframes fadeIn {
@@ -69,8 +68,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
-    <!-- Подключаем официальный скрипт Pinterest для работы виджета -->
-    <script async defer src="//://pinterest.com"></script>
 </head>
 <body>
 
@@ -78,11 +75,8 @@
 
     <div id="content">
         <h1>Яся, я тебя люблю ❤️</h1>
-        
-        <!-- Официальный виджет Pinterest, использующий твою точную ссылку -->
-        <div class="photo-container">
-            <a data-pin-do="embedPin" data-pin-width="large" data-pin-terse="true" href="https://pin.it/BqUaS4Jy5"></a>
-        </div>
+        <!-- Прямая постоянная ссылка на изображение, которая откроется везде -->
+        <img src="https://telegra.ph" alt="Яся">
     </div>
 
     <script>
